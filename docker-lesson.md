@@ -26,31 +26,39 @@ Docker Engine is the layer on which Docker runs.
     - A command line interface (CLI) client docker.
 
 Docker Architecture
-2020-05-12-16_37_26-PowerPoint-Slide-Show-Azure_AZ104_M01_Compute_ed1-1024x534.png
+![](https://github.com/DrVicki/docker-for-beginners/blob/main/docker-arch.png)
 
 Docker Architecture is made up of 5 major components:
 
-Docker Client
+  - Docker Client
+  - Docker Daemon
+  - Docker Host
+  - Docker Registry
+  - Docker Objects
 
-Docker Daemon
+**Docker Client**
 
-Docker Host
+Helps users to interact with Docker. 
+  - It communicates with the Docker Daemon using the commands and rest APIs. 
+  - Docker client provides a command-line interface (**CLI**) which allows users to run, and stop application commands to a Docker daemon.
 
-Docker Registry
+**Daemon**
 
-Docker Objects
+It runs on the operating system of the host. 
+  - It handles Docker objects e.g images, containes, network and volumes by listening for Docker API requests. 
+  - It is used to run containers and also manage services of the Docker. 
+  - A Daemon can communicate with other Daemons to manage services. 
+  - It is responsible for handling the construction, execution, and distribution of Docker containers.
 
-Docker Client
-Helps users to interact with Docker. It communicates with the Docker Daemon using the commands and rest APIs. Docker client provides a command-line interface (CLI) that allows users to run, and stop application commands to a Docker daemon.
+**Docker Host**
 
-Docker Daemon
-It runs on the operating system of the host. It handles Docker objects e.g images, containes, network and volumes by listening for Docker API requests. It is used to run containers and also manage services of the Docker. A Daemon can communicate with other Daemons to manage services. Itis responsible for handling the construction, execution and distribution of Docker containers.
+It is very important because without it, users cannot make use of Docker. 
+  - It is an environment where apllications can be executed and run. 
+  - Commands issued by the client are sent to the docker host which is recieved by the Docker daemon.
 
-Docker Host
-It is very important because without it, users cannot make use of Docker. It is an environment in which apllications can be executed and run. Commands issued by the client are sent over to the docker host which is recieved by the Docker daemon.
+**Docker Registry**
 
-Docker Registry
-Docker Registry also known as Docker Hub is a repository of Docker images for almost all technology stack where you can install or pull images.
+Docker Registry also known as Docker Hub is a repository of Docker images for almost all technology stacks where you can install or pull images.
 
 docker.PNG
 
