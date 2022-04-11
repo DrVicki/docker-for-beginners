@@ -68,6 +68,7 @@ Docker Registry also known as Docker Hub is a repository of Docker images for al
 These are what we interact with while using Docker, for example you use images, containers, volumes, networks, or plug-ins.
 
 **Docker Images**: 
+
   - Docker images are read-only templates with instructions to create a docker container. 
   - Docker image can be pulled from a Docker hub and used as it is, or you can add additional instructions to the base image and create a new and modified docker image. 
   - You can create your own docker images also using a dockerfile.
@@ -75,6 +76,7 @@ These are what we interact with while using Docker, for example you use images, 
   - When you edit a dockerfile and rebuild it, only the modified part is rebuilt in the top layer.
 
 **Docker Containers**: 
+
 Docker containers are isolated, packaged, and secured application environments which contain all the packages, libraries, and dependencies required to run an application. 
   - After you run a docker image, it creates a docker container. 
   - All the applications and their environments run inside this container. 
@@ -83,6 +85,7 @@ Docker containers are isolated, packaged, and secured application environments w
     - You can also access the bash of this Ubuntu environment and execute commands.
 
 **An explanatory example**
+
 Lets say we want to pull an image in Docker, we need to make use of the Docker pull command (one of the docker commands) which would be sent from the Client to the Docker host. 
   - The Docker Daemon is the one which recieves this command. 
   - What it would do would be to check the images contained on the docker host for the specified image which the client asked to be pulled and if that image is not present, it proceeds to pull/get the image from the registry/docker hub. 
@@ -99,53 +102,54 @@ Docker can be installed on these various platforms; macOs, Windows, Linux Machin
 
 **Basic Docker Commands**
 
-```docker build <path to docker file>```
+  - ```docker build <path to docker file>```
 
 This command is used to build an image from a specified docker file
 
-```docker -version```
+  - ```docker -version```
 
 This command is used to get the currently installed version of docker
 
-```docker run -it -d <image name>```
+  - ```docker run -it -d <image name>```
 
 This command is used to create a container from an image
 
-```docker ps```
+  - ```docker ps```
 
 This command is used to list the running containers
 
-```docker ps -a```
+  - ```docker ps -a```
 
 This command is used to show all the running and exited containers
 
-```docker stop <container id>```
+  - ```docker stop <container id>```
 
 This command stops a running container
 
-```docker kill <container id>```
+  - ```docker kill <container id>```
 
 This command kills the container by stopping its execution immediately
 
-```docker pull```
+  - ```docker pull```
 
 This command is used to pull images from the docker repository
 
-```docker push <username/image name>```
+  - ```docker push <username/image name>```
 
 This command is used to push an image to the docker hub repository
 
-```Docker rmi <image-id>```
+  - ```Docker rmi <image-id>```
 
 This command is used to delete an image from local storage
 
-```docker rm <container id>```
+  - ```docker rm <container id>```
 
 This command is used to delete a stopped container
 
 ### Why Docker?
 
 **Isolation**
+
 Docker ensures your applications and resources are isolated and segregated. 
   - Docker makes sure each container has its own resources isolated from other containers. 
   - You can have various containers for separate applications running completely different stacks. 
