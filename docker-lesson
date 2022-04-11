@@ -12,18 +12,18 @@ It is a containerization platform which allows developers to package programs in
 
 
 Docker Engine
+
 ![](https://github.com/DrVicki/docker-for-beginners/blob/main/docker.png)
 
 
-![](https://github.com/DrVicki/docker-for-beginners/commit/8d175158bebfc9620c948ed78aa3a45452fce605)
 
-Docker Engine is the layer on which Docker runs. It is installed on the host machine. It’s a lightweight runtime and tooling that manages containers, images, builds, and more. Docker Engine acts as a client-server application with:
-
-A server with a long-running daemon process dockerd.
-
-Rest APIs which specify interfaces that programs can use to talk to and instruct the Docker daemon.
-
-A command line interface (CLI) client docker.
+Docker Engine is the layer on which Docker runs. 
+  - It is installed on the host machine. 
+  - It’s a lightweight runtime and tooling which manages containers, images, builds, and more. 
+  - Docker Engine acts as a client-server application with:
+    - A server with a long-running daemon process dockerd.
+    - Rest APIs which specify interfaces programs can use to talk to and instruct the Docker daemon.
+    - A command line interface (CLI) client docker.
 
 Docker Architecture
 2020-05-12-16_37_26-PowerPoint-Slide-Show-Azure_AZ104_M01_Compute_ed1-1024x534.png
